@@ -35,6 +35,7 @@
 		<feature name="XMLHttpRequest" value="io.dcloud.net.XMLHttpRequestFeature"/>
 		<feature name="Statistic" value="io.dcloud.feature.statistics.StatisticsFeatureImpl"/>
 		<feature name="ShowErro" value="io.dcloud.Impl.ShowLogImpl"/>
+		<feature name="plugintest" value="io.dcloud.Impl.PGTest"/>
 		<feature name="Accelerometer" value="io.dcloud.feature.sensor.AccelerometerFeatureImpl"/>
 		<feature name="Orientation" value="io.dcloud.feature.sensor.OrientationFeatureImpl"/>
 		<feature name="NativeObj" value="io.dcloud.feature.nativeObj.FeatureImpl"/>		

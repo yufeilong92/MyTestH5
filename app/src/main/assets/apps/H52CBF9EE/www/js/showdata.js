@@ -15,6 +15,10 @@ document.addEventListener("plusready", function() {
               	// 通知Native层plugintest扩展插件运行”PluginTestFunction”方法
 			return B.exec(_SHOWDATA, method,[callbackId,args]);
 		},
+		getStrData:function(method, args){
+//		  	var callbackId = this.getCallbackId(successCallback, this.errorCallback);
+            return B.execSync(_SHOWDATA,method,[args]);
+		},
 		/**
 		 * 得到id
 		 * @param {Object} successCallback
@@ -46,8 +50,11 @@ document.addEventListener("plusready", function() {
         	this.showLog("addString",name,null);
         },
         getStringData:function(){
-         this.showLog("getStringData",null,null);
-        }
+         this.getStrData("getStringData",null);
+        },
+         getIntData:function(){
+      		return B.execSync(_SHOWDATA,"getIntData",null);
+      	}
 
 	};
 
