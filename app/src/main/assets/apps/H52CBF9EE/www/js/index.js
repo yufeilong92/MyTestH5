@@ -22,6 +22,6 @@ $("#addString").click(function () {
  * 获取Android中的数据
  */
 $("#getString").click(function () {
-	var str= plus.ShowErro.getStringData();
-	$("#getStr").text("测试结果："+str);
+	 plus.ShowErro.getStringData();
+
 })

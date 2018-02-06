@@ -10,6 +10,7 @@ import org.json.JSONException;
 
 import io.dcloud.common.DHInterface.IWebview;
 import io.dcloud.common.DHInterface.StandardFeature;
+import io.dcloud.common.util.JSUtil;
 
 /**
  * All rights Reserved, Designed By www.lawyee.com
@@ -71,9 +72,10 @@ public class ShowLogImpl extends StandardFeature {
      * @param jsonArray
      * @return
      */
-    public String getStringData(IWebview iWebview, JSONArray jsonArray) {
+    public void getStringData(IWebview iWebview, JSONArray jsonArray) {
+
       Toast.makeText(iWebview.getContext(),"测试获取数据",Toast.LENGTH_SHORT).show();
-        return "测试返回数据";
+        JSUtil.wrapJsVar("测试返回数据",true);
     }
 
 

@@ -46,7 +46,7 @@ document.addEventListener("plusready", function() {
         	this.showLog("addString",name,null);
         },
         getStringData:function(){
-          return this.showLog("getStringData",null,null);
+         this.showLog("getStringData",null,null);
         }
 
 	};
